@@ -1,0 +1,462 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: #460e4e;
+    padding-top: 16px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.pesquisar button, 
+.produto button {
+    padding: 1px 5px;
+    border: none;
+    background-color: #434eb9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.produto button {
+    margin-top: 16px;
+    margin-left: 27px;
+}
+
+nav {
+    background-color: #7e1a8d;
+    padding: 0;
+    display: block;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+}
+
+.menu li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.menu {
+    display: none;
+}
+
+.sobre {
+    display:flex
+}
+
+
+.sobre img {
+    height: 400px;
+}
+
+.sobre-a-loja {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.sobre-a-loja h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.sobre a {
+    padding: 0;
+}
+
+.margin {
+    border-top: 10px solid #434eb9;
+    padding: 20px 30px 0px 20px;
+    border-style: groove;
+}
+
+.margin img {
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.sobre {
+    border: 2px solid #cdcdcd91;
+}
+.clear {
+    clear: both;
+}
+
+.background {
+    background-image: url("./images/dund.jpg");
+}
+
+
+
+.h2 {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+h2 {
+    font-size: 40px;
+}
+
+
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+    border-top: 5px solid #434eb9;
+    padding-top: 45px;
+}
+
+.produto img {
+    width: 241px;
+}
+
+.produto a {
+    text-decoration: none;
+}
+
+h3 {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+    float: left;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer > .container  {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    display: flex;
+
+}
+
+footer {
+    background-color: #460e4e;
+    padding-top: 16px;
+    color: #fff;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .produto {
+        float: none;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 48%);
+        display: grid;
+        column-gap: 2%;
+        row-gap: 5%;
+        padding-left: 20px;
+        margin: 40px auto 80px auto;
+    } 
+
+    .produto h3 {
+        max-width: 241px;
+    }
+
+    .produto p {
+        max-width: 241px;
+    }
+    .produtos a {
+        font-size: 1.5em;
+    }
+    
+    .margin-left {
+        margin-left: 80px;
+    }
+
+    .margin-left2 {
+        margin-right: 0;
+    } 
+
+
+
+
+    .sobre img {
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .sobre-a-loja {
+        margin-left: 26px;
+        margin-right: 26px;
+        width: auto;
+        min-width: 350px;
+        max-width: 500px;
+    }
+
+    .sobre-a-loja h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 38px;
+        margin-top: 10px;
+    }
+
+    .sobre a {
+        padding: 0;
+    }
+
+    .margin {
+        border-top: 10px solid #434eb9;
+        padding: 13px 20px 0px 20px;
+        border-style: groove;
+        margin-left: auto;
+        
+    }
+
+    .margin p {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .margin img {
+        height: 120px;
+        display: block;
+        margin: 10px auto 5px auto;
+        
+    }
+
+    .sobre {
+        border: 2px solid #cdcdcd91;
+        justify-content: space-between;
+        height: 390px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){
+    .container {
+        max-width: 90%;
+    }
+
+    .produto {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .produtos {
+        text-align: center;
+        width: 100%;
+        margin: 40px auto 80px auto;
+        align-items: center;
+        display: block;
+
+    } 
+
+    .produto h3 {
+        max-width: 241px;
+    }
+
+    .produto p {
+        max-width: 241px;
+    }
+    .produtos a {
+        font-size: 1.5em;
+    }
+    
+
+
+
+
+
+    .sobre img {
+        height: 400px;
+
+        margin: 20px auto 10px auto;
+        text-align: center;
+        display: block;
+    }
+
+    .sobre-a-loja {
+        margin-left: 26px;
+        margin-right: 26px;
+        width: auto;
+        min-width: 220px;
+        max-width: 800px;
+    }
+
+
+    .sobre-a-loja h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 38px;
+        margin-top: 10px;
+    }
+
+    .sobre a {
+        padding: 0;
+    }
+
+    .margin {
+        border-top: 10px solid #434eb9;
+        padding: 0px 20px 0px 0px;
+        border-style: groove;
+        margin-left: auto;
+        display: block;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+
+    .margin p {
+        margin-left: 33px;
+        margin-right: 13px;
+
+    }
+
+    .margin img {
+        height: 180px;
+        display: block;
+        margin: 10px auto 5px auto;
+        text-align: center;
+        padding-left: 0px;
+        
+    }
+
+    .sobre {
+        border: 2px solid #cdcdcd91;
+        justify-content: space-between;
+        text-align: center;
+        display: block;
+        width: 100%;
+        width: auto;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    .pesquisar input, 
+    .pesquisar button{
+        float: right;
+    }
+
+    .pesquisar button {
+        margin-left: 10px;
+    }
+
+
+
+    .fot {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .fott{
+        margin-right: 8px;
+        margin-left: 0px;
+    }
+
+    .fottt {
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    .cont {
+        flex-wrap: nowrap;
+        display: flex;
+    }
+}
+
+fiz conforme foi pedido mais ficou algumas duvidas
+
+1) no modo para tablet quebrei a lista de produtos em duas colunas mas não consegui deixa-las alinhadas exatamente no meio na horizontal, fiz oq que consegui chegar mais próximo disso usando margens mas conforme vai redefinindo o tamanho da tela os itens perdem a centralização
+
+2) no modo para celular quebrei em uma coluna apenas os produtos, porem quando a tela esta no max-width fica em 2 colunas, o que eu pessoalmente achei bem melhor visualmente e faz com que o site se adapte melhor ao tamanho horizontal do usuário, mas e se eu quisesse que ficasse em uma coluna independente do tamanho da tela como eu faria?
+
+3) nas fotos da sessão "sobre a nossa loja eu tentei fazer com que ela redimensionasse de tamanho conforme diminui o tamanho da tela  se adequando ao container em que ela pertence, eu consegui fazer isso porem apenas no eixo x, o que fez com que a imagem perdesse a proporção, como faria para implementar essa função de o tamanho de a imagem se adequar ao tamanho do container automaticamente sem perder a proporção 
+
+
