@@ -3,7 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: roboto, sans-serif;
+}
 
+.container2 {
+    width: 100%;
+    overflow-x: hidden
 }
 
 .container {
@@ -93,6 +97,26 @@ header > .container {
     display: none;
 }
 
+#carousel-imagens {
+    max-width: 147px;
+    width: 100%; 
+    height: auto; 
+    margin-top: 25px;
+    
+}
+
+#carousel-imagens img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
 .sobre {
     display:flex
 }
@@ -146,7 +170,7 @@ header > .container {
 
 .h2 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     
 }
 
@@ -162,7 +186,7 @@ h2 {
     column-gap: 2%;
     row-gap: 5%;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 25px;
     width: 100%;
     margin-bottom: 40px;
     border-top: 5px solid #434eb9;
@@ -450,13 +474,3 @@ footer {
         display: flex;
     }
 }
-
-fiz conforme foi pedido mais ficou algumas duvidas
-
-1) no modo para tablet quebrei a lista de produtos em duas colunas mas não consegui deixa-las alinhadas exatamente no meio na horizontal, fiz oq que consegui chegar mais próximo disso usando margens mas conforme vai redefinindo o tamanho da tela os itens perdem a centralização
-
-2) no modo para celular quebrei em uma coluna apenas os produtos, porem quando a tela esta no max-width fica em 2 colunas, o que eu pessoalmente achei bem melhor visualmente e faz com que o site se adapte melhor ao tamanho horizontal do usuário, mas e se eu quisesse que ficasse em uma coluna independente do tamanho da tela como eu faria?
-
-3) nas fotos da sessão "sobre a nossa loja eu tentei fazer com que ela redimensionasse de tamanho conforme diminui o tamanho da tela  se adequando ao container em que ela pertence, eu consegui fazer isso porem apenas no eixo x, o que fez com que a imagem perdesse a proporção, como faria para implementar essa função de o tamanho de a imagem se adequar ao tamanho do container automaticamente sem perder a proporção 
-
-

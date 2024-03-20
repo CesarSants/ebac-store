@@ -63,14 +63,22 @@
         </section>
     </div>
 
-<!--
-    <div id="carousel-imagens">
-        <img src="/images/azul-banco.png" alt="">
-        <img src="/images/laranja.png" alt="">
-        <img src="/images/azul.png" alt="">
-        <img src="/images/preto.png" alt="">
+    <div class="container2">
+        <div id="carousel-imagens" class="carousel">
+            <img class="carousel-item" src="/images/azul-banco.png" alt="">
+            <img class="carousel-item" src="/images/laranja.png" alt="">
+            <img class="carousel-item" src="/images/azul.png" alt="">
+            <img class="carousel-item" src="/images/preto.png" alt="">
+            <img class="carousel-item" src="/images/azul-banco.png" alt="">
+            <img class="carousel-item" src="/images/laranja.png" alt="">
+            <img class="carousel-item" src="/images/azul.png" alt="">
+            <img class="carousel-item" src="/images/preto.png" alt="">
+            <img class="carousel-item" src="/images/azul-banco.png" alt="">
+            <img class="carousel-item" src="/images/laranja.png" alt="">
+            <img class="carousel-item" src="/images/azul.png" alt="">
+            <img class="carousel-item" src="/images/preto.png" alt="">
+        </div>
     </div>
--->
 
     <div class="container">
         <h2 class="h2" id="produt">Produtos</h2>
@@ -162,6 +170,10 @@
         $(document).ready(function(){
             $('#carousel-imagens').slick({
                 autoplay: true,
+                speed: 1000,
+                autoplaySpeed: 1000,
+                autoplayTimeout: 0,
+                autoplayHoverPause: false,
             })
         })
     </script>
